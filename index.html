@@ -1,0 +1,65 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lisinski Burner Wallet</title>
+
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+
+    <section class="section">
+        <div class="container">
+            <h1 class="title">
+                Tombola za DeFi ulaznicu
+            </h1>
+            <p class="subtitle">
+                Klikni "igraj" da se pridružiš tomboli za ulaznicu na <a href="https://defi.academy/">DeFi Academy</a>!
+            </p>
+            <p><em>Razvoj: Bitfalls.com</em></p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container osnove">
+            <p>Stanje računa <span id="thisAddress"></span>: <span id="stanje"></span> LEth.</p>
+        </div>
+    </section>
+
+    <div class="box">
+    <section class="section">
+        <div class="container ubik">
+            <button disabled="disabled"  data-choice="ubik" class="button is-link is-medium" id="ubikButton">Učitavam...</button>
+        </div>
+    </section>
+</div>
+
+<div class="box">
+    <section class="section">
+        <div class="container winner">
+            <p>Pobjednik: <span id="winnerinfo"></span></p>
+            <p>Igrača: <span id="numPlayers"></span></p>
+        </div>
+    </section>
+</div>
+
+
+<div class="box">
+    <section class="section">
+        <div class="container draw">
+                <button disabled="disabled"  data-choice="ubik" class="button is-link is-medium" id="drawButton">Učitavam...</button>
+            </div>
+    </section>
+</div>
+
+
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/ethers-v4.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
