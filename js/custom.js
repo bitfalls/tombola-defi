@@ -182,7 +182,11 @@ async function getVotes() {
 			$("#winnerinfo").text("Nitko");
 			$("#drawButton").attr("disabled", false).text("Izvuci pobjednika");
 		} else {
-			$("#winnerinfo").text(result);
+			if (result == wallet.address) {
+				$("#winnerinfo").text(result + " - ČESTITAMO! Javite se na contact@bitfalls.com čim prije!!");
+			} else {
+				$("#winnerinfo").text(result);
+			}
 			$("#drawButton").attr("disabled", "disabled").text("Pobjednik izvučen");
 		}
 	});
